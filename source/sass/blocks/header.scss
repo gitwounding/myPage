@@ -1,0 +1,12 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.header {
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var.$base-color;
+  }
+}
