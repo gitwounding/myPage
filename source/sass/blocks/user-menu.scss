@@ -4,8 +4,8 @@
 .user-menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   font-size: 14px;
+  font-weight: 700;
   line-height: 20px;
 }
 
@@ -15,29 +15,6 @@
   flex-wrap: wrap;
   display: flex;
   align-items: center;
-  margin-right: 20px;
-  border-radius: 0 0 15px 15px;
-  background-color: var.$base-color;
-
-  &::before,
-  &::after {
-    content: "";
-    top: 0;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    mask-image: url("../img/stack.svg#corner");
-    background-color: inherit;
-  }
-
-  &::before {
-    left: -15px;
-  }
-
-  &::after {
-    right: -15px;
-    transform: scaleX(-1);
-  }
 }
 
 .user-menu__item {
@@ -52,7 +29,7 @@
     transform: translateY(-50%);
     width: 2px;
     height: 14px;
-    opacity: 0.6;
+    opacity: 0.1;
     mask-image: url(../img/stack.svg#delimiter);
     background-color: #ffffff;
   }
@@ -62,11 +39,11 @@
   color: #ffffff;
   display: block;
   text-decoration: none;
-  padding: 20px 22px;
+  padding: 12px 22px;
+  transition: color 0.3s ease;
 
   &:hover {
-    background-color: #ffffff;
-    border-radius: 15px 15px 0 0;
+    color: var.$base-color;
   }
 }
 

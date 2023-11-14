@@ -1,0 +1,18 @@
+.logo {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.logo span {
+  text-align: end;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.3;
+}

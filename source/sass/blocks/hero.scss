@@ -1,0 +1,31 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.hero {
+  min-height: 800px;
+  background-image: url("../img/main-devider.svg"), url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom -1px, center top;
+  background-size: auto, cover;
+}
+
+.hero__wrapper {
+  text-align: center;
+  padding: 255px 0 380px;
+}
+
+.hero__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var.$base-color;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hero__decription {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.3;
+}

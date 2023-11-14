@@ -1,0 +1,54 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.promo {
+}
+
+.promo__list {
+  @include mixins.list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border-radius: 60px;
+  text-align: center;
+  background-color: #151922;
+
+  &--web::before,
+  &--app::before,
+  &--front::before {
+    content: "";
+    width: 212px;
+    height: 180px;
+    margin-bottom: 40px;
+    background: url("../img/web.png") no-repeat center;
+  }
+
+  &--app::before {
+    background: url("../img/app.png") no-repeat center;
+  }
+
+  &--front::before {
+    width: 238px;
+    background: url("../img/dev.png") no-repeat center;
+  }
+}
+
+.promo__subtitle {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: var.$base-color;
+}
+
+.promo__description {
+  margin: 0;
+}

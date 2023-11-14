@@ -1,0 +1,28 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.leng {
+  @include mixins.list-reset;
+  display: flex;
+}
+
+.leng__item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.leng__link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+
+  &--active,
+  &:hover {
+    opacity: 1;
+    color: var.$base-color;
+  }
+}
